@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>company</title>
+<style>
+body{margin:0px;}
+.navegnation a{
+			height:auto;
+			color:red;
+			padding:10px 22px;
+			background:#30ff20;
+			float:left;
+			text-decoration:none;
+			float:left;
+			font-size:40px;
+}
+.navegnation a:hover{background:green;}
+.services a{ 
+			float:none;
+			display:block;
+		
+}
+.services{float:left;}
+.option{
+			height:0;
+			overflow:hidden;
+		
+		
+}
+.services:hover .option{
+			height:265px;
+			transition:0.6s;
+}
+	</style>
+
+<body >
+<div class="navegnation">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<div class="services">
+			<a href="#">services &#9660;</a>
+			<div class="option">
+					<a href="#">software</a>
+					<a href="#">hardware</a>
+					<a href="#">moter</a>
+					<a href="#">car</a>
+					<a href="#">time pe</a>
+			</div>
+			</div>
+			
+			
+			<div class="services">
+			<a href="#">Others &#9660;</a>
+			<div class="option">
+					<a href="#">Editing</a>
+					<a href="#">Item song shoot</a>
+					<a href="#">photography</a>
+					<a href="#">web design</a>
+			</div>
+			</div>
+			<input onkeyup="some(event)">
+	</div>
+	<script>
+		function some(e){
+			console.log(e.key);
+			console.log(e.keyCode);
+			console.log(e.which);
+			console.log(e.charCode);
+			console.log(e.key.charCodeAt(0));
+		}
+	</script>
+</body>
+</html>

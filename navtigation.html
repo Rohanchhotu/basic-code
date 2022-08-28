@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>WEb Creation</title>
+<style>
+	body{margin:0;}
+	.navgation{	
+		background:green;
+	}
+	.navgation a{
+		text-decoration:none;
+		font-family:'calibri';
+		font-size:31px;
+		color:black;
+		padding:12 34px;
+		display:inline-block;
+		border-bottom:2px solid transparent;
+		background:green;
+	}
+	.navgation a:hover{
+		background:#30ee30;
+		border-bottom:2px solid dodgerblue;
+	}
+	
+	.serviceContaner{
+		position:relative;
+		display:inline-block;
+	}
+
+	.servicesbox{
+		position:absolute;
+		height:0;
+		transition:.8s;
+		overflow:hidden;
+		
+	}
+	.serviceContaner:hover .servicesbox{
+		height:auto;
+		border-bottom:2px solid dodgerblue;
+		background:green;
+		overflow:visible;
+	}
+	#indecator{
+		transition:.5s;
+		transform:rotate(180deg);
+	}
+	.serviceContaner:hover #indecator{transform:rotate(40deg);}
+	#jump{
+		position:relative;
+	}
+	#servicesbox{
+		position:absolute;
+		left:100%;
+		top:0%;
+		height:0;
+		background:green;
+		overflow:hidden;
+	}
+	#jump:hover #servicesbox{
+		height:auto;
+	}
+</style>
+</head>
+<body>
+	<div class="navgation">
+		<a href ="#">Home</a>
+		<a href ="#">Abouts</a>
+		<a href ="#">Contacts</a>
+		<div class="serviceContaner">
+			<a href ="#">services <span id="indecator">&#9660;</span></a>
+			<div class="servicesbox">
+				<a href ="#">Travling</a>
+				<a href ="#">forest visit</a>
+				<div id="jump">
+					<a href ="#">jumps &#9664</a>
+					<div id="servicesbox">
+						<a href="#">Air jumps</a>
+						<a href="#">High jumps</a>
+						<a href="#">long jumps</a>
+						<a href="#">short jumps</a>
+					</div>
+				</div>
+				<a href ="#">skating</a>
+			</div>
+		</div>
+		<a href ="#">Others</a>	
+	</div>
+</body>
+</html>

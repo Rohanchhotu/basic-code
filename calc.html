@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>calculator</title>
+<style>
+body{
+	margin:0px;
+	background-image:linear-gradient(green,blue);
+}
+table tr td{
+	height:70px;
+	width:70px;
+	background:aqua;
+	padding:3px;
+	font-size:25px;
+	font-family:arial;
+	text-align:center;
+	font-weight:bold;
+	}
+#first td:first-child{
+	background:black;
+}
+#calculator td:first-child{
+	background:none;
+	color:white;
+	}
+table td{border:1px solid white;}
+table td:first-child{border:none;}
+</style>
+</head>
+<body>
+	<table id="table" border="0px" cellspacing="1px" align="center">
+		<tr id="calculator">
+			<td colspan="4" >Calculator</td>
+			<!-- <td></td>
+			<td></td>
+			<td></td> -->
+		</tr>
+	    <tr id="first">
+			<td colspan="4"></td>
+			<!-- <td></td>
+			<td></td>
+			<!-- td></td> -->
+		</tr>
+		<tr>
+			<td colspan="2">c</td>
+			<!-- <td></td> -->
+			<td>DEL</td>
+			<td>÷</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>*</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>+</td>
+		</tr><tr>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>-</td>
+		</tr>
+			<tr>
+			<td>.</td>
+			<td>0</td>
+			<td colspan="2" align="center">=</td>
+			<!-- <td></td> -->
+		
+		</tr>
+	</table>
+</body>
+</html>
