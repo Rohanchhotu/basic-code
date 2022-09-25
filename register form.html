@@ -1,0 +1,65 @@
+<html>
+  <head>
+     <title>side navigation</title>
+	   <style>
+	   body{margin:0px;}
+	      #main{
+			height:100%;
+			width:100%;
+			background:green;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+		  }
+		#main  #form{
+			height:500px;
+			width:400px;
+			background:aqua;
+			display:flex;
+			justify-content:space-around;
+			align-items:center;
+			flex-direction:column;
+			font-family:cooper;
+			font-size:22px;
+						}
+				
+		.data{
+			width:90%;
+			padding:10px 15px;
+			border:none;
+			border-radius:21px;
+			font-size:20px;
+			text-align:center;
+		}	
+	.btn{
+			padding:16px 40px;
+			font-size:21px;
+			background:black;
+			color:white;
+			border:none;
+			border-radius:26px;
+	}
+	.btn:hover{
+			box-shadow:40px 0  blue;
+			
+	}
+	   </style>
+  </head>
+    <body>
+	    <div id="main">
+			<div id="form">
+		<h1 id="register">Register</h1>
+		<input type="text" class="data" placeholder="first name">
+		<input type="email" class="data" placeholder="Email id">
+		<input type="password" class="data" placeholder="password">
+		<input type="password" class="data" placeholder="comform password">
+		<input type="number" class="data" placeholder="contact no.">
+			<div id="btnmain">
+		<button id="register" class="btn">Register</button>
+		<button id="register" class="btn">cencel</button>
+			  </div>
+			</div>
+			
+		</div>
+	</body>
+</html>
