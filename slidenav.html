@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>No Slidenav</title>
+<style>
+	body{
+		background-image:url(01.jpg);
+		margin:0px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		
+	}
+	#mainnav{
+		background:purple;
+		height:90PX;
+		width:350PX;
+		border-radius:21px;
+		position:relative;
+		transition:.9s;
+		
+	}
+	#mainnav::before{
+		content:"click me!";
+		height:90px;
+		width:90px;
+		border-radius:56%;
+		background:red;
+		cursor:hand;
+		position:absolute;
+		top:-1px;
+		left:-11px;
+		box-shadow:0 0 5px rgba(0 0 0 5);
+		
+	}
+	#check{display:none;}
+	#check:checked~label #mainnav::before{
+		left:270px;
+		background:aqua;
+	    box-shadow:0 0 20px rgba(0 212 232);
+		
+	}
+	#check:checked~label #mainnav{
+		background-color:red;
+		filter:blur(10px);
+	}
+	#mainnav{
+		position:top;
+	}
+	#secend{
+	background:green;
+	height:500PX;
+	width:450px;
+	border-radius:32px;
+	background-image:url(03.jpg)
+	}
+</style>
+</head>
+<body>
+<input type="checkbox" id="check">
+  <label for="check">
+	<div id="mainnav">
+		</div>
+  </label>
+<div id="secend">
+	
+</div>
+</body>
+</html>
