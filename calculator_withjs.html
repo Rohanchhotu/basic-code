@@ -1,0 +1,122 @@
+<html>
+<head>
+	<title>Calclutor</title>
+	<style>
+	
+		
+		body{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%); 
+		}
+		
+		input[type=button] {  
+		  width: 70px;  
+		  height: 70px;  
+		  float: left;  
+		  margin: 5px;  
+		  box-sizing: border-box;  
+		  background: #ecedef;  
+		  border: none;  
+		  font-size: 30px;  
+		  line-height: 30px;  
+		  border-radius: 50%;  
+		  font-weight: 700;  
+		  color: #5E5858;  
+		  cursor: pointer;  
+		  box-shadow: 0px 0px 6px green,0px 3px 6px red,4px 0px 6px yellow,2px 0px 6px blue;
+		  
+		
+		}  
+	input[type=text] {  
+		  width: 290px;  
+		  height: 60px;  
+		  float: left;  
+		  padding-left:12px;  
+		  box-sizing: border-box;  
+		  border: none;  
+		  background: none;
+		  border-radius: 20px;		  
+		  color: yellow;  
+		  text-align: right;  
+		  font-weight: bold;  
+		  font-size: 40px;  
+		  line-height: 10px;  
+		  margin: 1px 25px;  
+		  } 
+.calculator {  
+		  background-color: #c0c0c0;  
+		  box-shadow: 1px 0px 10px 10px blue;  
+		  border: 5px solid black;  
+		  border-radius: 11px;  
+			}
+#display{
+		 height:49px;
+		 text-align:left;
+		 background-color: black;  
+		 border: 1px solid white;
+}		
+.btnTop {  
+		  color: white;  
+		  background-color: #6f6f6f;  
+		  font-size: 14px;  
+		  margin: auto;  
+		  width: 50px;  
+		  height: 25px;  
+}     	
+	#rc{
+			position:absolute;
+			top:65px;
+			height:40px;
+			width:600px;
+			font-size:35px;
+			color:white;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+	}
+	</style>
+</head>
+	<body>
+		<div id="rc">Create by Rc..</div>
+		<div id="maniContainer">
+	   <form name="Calculator" class = "calculator" >
+		<table border="2px" align="center" >
+	<tr>  
+	  <td>  
+		<input type="text" name="Input" Size="35" id="display">
+		<br>  
+		 </td>  
+		</tr>  
+		 <tr>
+		 <td>
+		<input type="button" name = "one"  style="font-size:30px;" value=" 1 " OnClick="Calculator.Input.value += '1'">  
+		<input type="button" name = "two" style="font-size:30px;" value=" 2 " OnClick="Calculator.Input.value += '2'">  
+		<input type="button" name = "three" style="font-size:30px;" value=" 3 " OnClick="Calculator.Input.value += '3'">  
+		<input type="button" name="add" class ="btnTop" style="font-size:30px" value=" + " OnClick="Calculator.Input.value += '+'">  
+
+		<br>
+		<input type="button" name = "Four" style="font-size:30px;" value=" 4"  OnClick="Calculator.Input.value += '4'">
+		<input type="button" name = "Five" style="font-size:30px;" value=" 5"  OnClick="Calculator.Input.value += '5'">
+		<input type="button" name = "six" style="font-size:30px;" value=" 6"  OnClick="Calculator.Input.value += '6'">
+		<input type="button" name = "minus" style="font-size:30px" value=" - " OnClick="Calculator.Input.value += '-'">  
+		<br>
+		<input type="button" name = "seven" style="font-size:30px;" value=" 7"  OnClick="Calculator.Input.value += '7'">
+		<input type="button" name = "eight" style="font-size:30px;" value=" 8"  OnClick="Calculator.Input.value += '8'">
+		<input type="button" name = "nine" style="font-size:30px;" value=" 9"  OnClick="Calculator.Input.value += '9'">
+		<input type="button" name = "multi" style="font-size:30px" value=" * " OnClick="Calculator.Input.value += '*'">  
+		<br>
+		<input type="button" name = "clear" style="font-size:30px" value=" c " OnClick="Calculator.Input.value  =null">  
+		<input type="button" name="zero" style="font-size:30px" value=" 0 " OnClick="Calculator.Input.value += '0'">  
+		<input type="button" name="DoIt" style="font-size:30px" value=" = " OnClick="Calculator.Input.value = eval(Calculator.Input.value)">  
+		<input type="button" name="div"                                                style="font-size:30px" value=" / " OnClick="Calculator.Input.value += '/'">  
+		<br>  
+
+	</td>
+	</tr>
+    </table>
+	</form>
+   </div>
+</body>
+</html>
