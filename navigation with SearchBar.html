@@ -1,0 +1,149 @@
+<html>
+	<head>
+		<title>Drop down</title>
+		<style>
+			
+			body{margin:0; background:skyblue;}
+			#main{
+				height:44px;
+				width:100%;
+				background:green;
+				color:white;
+			}
+			#main a{
+				text-decoration:none;
+				color:white;
+				background:green;
+				font-size:20px;
+				padding:10px 20px;
+				border-bottom:2px solid transparent;
+				float:left;
+				text-align:center;
+			}
+			#main a:hover{
+				background:rgba(0,0,0,.9);
+				border-bottom:2px solid dodgerblue;
+			}
+			#blog{float:left;}
+			#blog a{
+				float:none;
+				display:block;
+			}
+			#symbol{
+				font-size:15px;
+				color:aqua;
+				margin-left:10px;
+			}
+			#option{
+				height:0;
+				overflow:hidden;
+				transition:.5s;
+				opacity:0;
+			}
+			#blog:hover #option{
+				opacity:1;
+				height:225px;
+				overflow:visible;
+			}
+			#gamingBlog{
+				position:relative;
+			}
+			#gamingBlogOption{
+				position:absolute;
+				left:100%;
+				top:0px;
+				overflow:hidden;
+				height:0px;
+				width:0px;
+				transition:.5s;
+			}
+			#gamingBlog:hover #gamingBlogOption{
+				height:270px;
+				width:150px;
+			}
+			#search{
+				height:28px;
+				width:80px;
+				border-radius:30px;
+				border:2px solid white;
+				float:right;
+				margin:5px;
+				padding:0 5px;
+				overflow:hidden;
+				background:white;
+				transition:.5s;
+			}
+			#search:hover{width:300px;}
+			#search input{
+				width:90%;
+				font-size:18px;
+				margin:0;
+				flaot:left;
+				background:transparent;
+				border-color:transparent;
+			}
+			#search input:focus{outline:none;}
+			#search button{
+				float:right;
+				height:100%;
+				margin:0;
+				width:10%;
+				background:transparent;
+				border:none;
+				background-image:url('011.png');
+				background-size:100%;
+				background-repeat:no-repeat;
+				cursor:hand;
+				border-radius:50%;
+			}
+		</style>
+	</head>
+	<body>
+			<div id="main">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<div id="blog">
+				<a href="#">Blog <span id="symbol">&#9660;</span></a>
+				<div id="option">
+					<a href="#">Travel Blog</a>
+					<a href="#">Foodie Blog</a>
+					<div id="gamingBlog">
+						<a href="#">Gaming Blog  &#9163;</a>
+						<div id="gamingBlogOption">
+							<a href="#">PUBG</a>
+							<a href="#" target="_black">FreeFire</a>
+							<a href="#">Fortnite</a>
+							<a href="#">CoverFire</a>
+							<a href="#">BGMI</a>
+							<a href="#">CandyCrush</a>
+						</div>
+					</div>
+					<a href="#">Review Blog</a>
+					<a href="#">Information Blog</a>
+				</div>
+				
+			</div>
+			<a href="#">Services</a>
+			<a href="#">Contacts</a>
+			<a href="#">Help</a>
+			<div id="search">
+				<input onclick="myFunction(this,event)" id="txt" placeholder="Search">
+				<button id="searchBtn"></button>
+			</div>
+		
+			<script>
+				function myFunction(t,e){
+					console.log(e.key);
+					if(e.key=="d"){
+						t.value+="s";
+						e.preventDefault();
+					}else if(e.key=="D"){
+						t.value+="S";
+						e.preventDefault();
+					}else if(e.key=="Alt"){}
+				}
+			</script>
+			
+		</div>		
+	</body>
+</html>

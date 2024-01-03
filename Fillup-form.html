@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>create file</title>
+   <style>
+	 body{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		font-size:21px;
+	 }
+	#maincontainer{
+		height:550px;
+		width:40%;
+		background:green;
+		border-radius:10px;
+		font-size:21px;
+	}
+	#Emails{
+		width:434px;
+		
+	}
+	#ranges{
+		height:2px;
+	}
+	#passwords{width:250 cvpx;}
+	#ages{width:155px;}
+	#sources{width:225px;}
+	#firsts{width:250px;}
+   </style>
+</head>
+	<body>
+	  <div id="maincontainer">
+		 <div id="heading">
+		   <h3>Create Account</h3>
+		 </div>
+		  <div id="Input" >
+		  <table border="1px">
+			<tr>
+				 <td>First name*<br><input type="text"  id="firsts" placeholder="Enter your Name"></td>
+				 <td>Last name<input type="text" placeholder="Enter your Last Name"></td>
+			</tr>
+			<tr>
+				 <td colspan="2">Email*<br><input type="text" id="Emails" placeholder="Enter your Email"></td>
+				 <!-- <td></td> -->
+			</tr>
+			<tr>
+				<td>password*<br><input type="password" id="passwords" placeholder="Enter your password"></td>
+				<td  >comform password*<input type="text" placeholder="Enter your Name"></td>
+			</tr>
+			<tr>
+				<td>Gender:<br>
+				    <input type="radio">male
+					<input type="radio">female
+				</td>
+				<td>Hobbies<br>
+					<input type="checkbox">Music
+					<input type="checkbox">sports
+					<input type="checkbox">movies
+					<input type="checkbox">travel
+					
+				</td>
+			</tr>
+			<tr>
+				<td>Source of income<br>
+					<select id="sources">
+				<option>Employed</option>
+				<option>manager</option>
+				<option>Actor</option>
+				<option>clark</option>
+				<option>IAS</option>
+				<option>bussnessman</option>
+				</select>
+				</td>
+				<td >Income
+					<input type="range" id="ranges"><mark>20k</mark>
+				</td>
+			</tr>
+			<tr>
+				<td>Upload profile picture<br> <input type="file" id="uploads"></td>
+				<td>Age<br>
+					<select  id="ages">
+				<option>18</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+				<option>10</option>
+				<option>11</option>
+				<option>12</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">Bio</td>
+				<!-- <td></td> -->
+				<input-box>
+			</tr>
+
+			</table>
+			
+		  </div>
+	  </div>
+	</body>
+</html>
