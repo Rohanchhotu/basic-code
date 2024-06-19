@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>form</title>
+		<style>
+			*{
+			margin:0px;
+			padding:0px;
+			box-sizing:border-box;
+		}
+		body{
+			display: flex;
+			justify-content:center ;
+			align-items: center;
+			min-height: 100vh;
+			background-color: #222;
+			overflow: hidden;
+
+		}
+		.box{
+			position:relative;
+			width: 500px;
+			height: 500px;
+
+		}
+		.box span{
+			position: absolute;
+			inset: 0px;
+			background-color: rgb(255, 255,255,0.1);
+			transform: rotate(calc(45deg * var(--i)));
+			
+		}
+		.box span::before{
+			content: '';
+			position: absolute;
+			left: 50%;
+			width: 250px;
+			height: 300px;
+			background:"url(background.jpg)" ;
+			background-size: cover;
+			background-position: center;
+			transform: translateX(-50%) translateY(-100px);
+			scale: (0.75);
+			animation: animate 2s steps(1) infinite;
+			animation-delay: calc(0.1s * var(--1));
+		}
+		@keyframes animate {
+			0%{
+				background: url(background.jpg);
+			}
+			50%{
+				background: url(bulbb.jpg);
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<span style="--i:0"></span>
+			<span style="--i:1"></span>
+			<span style="--i:2"></span>
+			<span style="--i:3"></span>
+			<span style="--i:4"></span>
+			<span style="--i:5"></span>
+			<span style="--i:6"></span>
+			<span style="--i:7"></span>
+		</div>
+	</body>
+</html>
